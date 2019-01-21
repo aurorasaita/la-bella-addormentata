@@ -72,7 +72,7 @@ var CreditiState = {
     preload: function() {
         game.load.crossOrigin = 'anonymous';
         game.load.image('open', 'assets/crediti.png');
-        game.load.spritesheet('bottHome', 'assets/bottHome.png', 263, 76);
+        game.load.image('bottHome', 'assets/bottHome.png');
         game.load.spritesheet('bottCrediti', 'assets/bottCrediti.png', 263, 76);
         game.load.spritesheet('bottAutori', 'assets/bottAutori.png', 263, 76);
     },
@@ -1264,6 +1264,7 @@ var BadState = {
         game.load.crossOrigin = 'anonymous';
         game.load.image('open', 'assets1/hai perso.png');
         game.load.image('riprova', 'assets1/riprova.png');
+        game.load.spritesheet('bottHome', 'assets1/tornaacasa.png');
         game.load.spritesheet('aurorachepiange', 'assets1/aurora che piange.png', 406, 339);
     },
 
@@ -1275,6 +1276,9 @@ var BadState = {
         image = game.add.sprite(680, 640, 'riprova');
         image.inputEnabled = true;
         image.events.onInputDown.add(this.imageClick, this);
+        bottHome = game.add.sprite(100, 640, 'bottHome');
+        bottHome.inputEnabled = true;
+        bottHome.events.onInputDown.add(this.bottHomeClick, this);
         piange = game.add.sprite(350, 300, 'aurorachepiange');
         piange.animations.add('piagnona', [0,1,2,3,4,5,6,7,8,9,10], 6, true);
         piange.animations.play('piagnona', 6, true);
@@ -1285,6 +1289,10 @@ var BadState = {
 
     imageClick: function(pointer) {
         this.game.state.start('Game1');
+    },
+
+    bottHomeClick: function(pointer){
+        game.state.start('Start');
     }
 
 }

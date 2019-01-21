@@ -2354,6 +2354,7 @@ var BadState = {
         game.load.crossOrigin = 'anonymous';
         game.load.image('open', 'assets1/hai perso.png');
         game.load.image('riprova', 'assets1/riprova.png');
+        game.load.image('bottHome', 'assets1/tornaacasa.png');
         game.load.spritesheet('aurorachepiange', 'assets1/aurora che piange.png', 406, 339)
     },
 
@@ -2364,6 +2365,9 @@ var BadState = {
         image = game.add.sprite(680, 640, 'riprova');
         image.inputEnabled = true;
         image.events.onInputDown.add(this.imageClick, this);
+        bottHome = game.add.sprite(100, 640, 'bottHome');
+        bottHome.inputEnabled = true;
+        bottHome.events.onInputDown.add(this.bottHomeClick, this);
         piange = game.add.sprite(350, 300, 'aurorachepiange');
         piange.animations.add('piagnona', [0,1,2,3,4,5,6,7,8,9,10], 6, true);
         piange.animations.play('piagnona', 6, true);
@@ -2371,10 +2375,16 @@ var BadState = {
         danneggiamento = false;
         catturato=false;
         statoPrincipe = 0;
+        attivata10=false;
     },
 
     imageClick: function(pointer) {
         this.game.state.start('Game1');
+    },
+
+
+    bottHomeClick: function(pointer){
+         window.location.href = "index.html";
     }
 
 }
@@ -2390,6 +2400,7 @@ var BadFinaleState = {
         game.load.image('open', 'assets/finaleNegativo.png');
         game.load.image('riprova', 'assets2/riprova.png');
         game.load.image('principeFinale', 'assets2/principeFinale.png');
+        game.load.image('bottHome', 'assets2/tornaCasa.png');
 
     },
 
@@ -2404,12 +2415,16 @@ var BadFinaleState = {
         riprova = game.add.sprite(40, 40, 'riprova');
         riprova.scale.setTo(0.2,0.2)
         riprova.alpha=0;
+        bottHome = game.add.sprite(854, 40, 'bottHome');
+        bottHome.scale.setTo(0.5,0.5)
+        bottHome.alpha=0;
         principeFinale = game.add.sprite(212, 430, 'principeFinale');
         principeFinale.alpha = 0;
         danno = 2;
         danneggiamento = false;
         catturato=false;
         statoPrincipe = 0;
+        attivata10=false;
         if (scettro===3){
           speciale=true;
         }
@@ -2421,6 +2436,9 @@ var BadFinaleState = {
         riprova.alpha=1;
         riprova.inputEnabled = true;
         riprova.events.onInputDown.add(this.imageClick, this);
+        bottHome.alpha=1;
+        bottHome.inputEnabled = true;
+        bottHome.events.onInputDown.add(this.bottHomeClick, this);
                   }
         if (principeFinale.alpha ===0) {
         principeFinale.alpha = 1;
@@ -2429,6 +2447,11 @@ var BadFinaleState = {
 
       imageClick: function(pointer) {
           this.game.state.start('Game1');
+      },
+
+
+      bottHomeClick: function(pointer){
+           window.location.href = "index.html";
       }
 
 }

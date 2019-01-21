@@ -61,7 +61,7 @@ preload: function() {
   game.load.image('dialogoprincipe', 'assets2/principe2.png');
   game.load.image('dialogospeciale1', 'assets2/speciale1.png');
   game.load.image('dialogospeciale2', 'assets2/speciale2.png');
-  game.load.image('dialogoGuardia', 'assets2/dialogoGuardia.png');
+  game.load.image('dialogoGuardia', 'assets2/dialogoguardia.png');
 
     game.load.spritesheet('aurora', 'assets2/aurora.png', 38, 38);
     game.load.spritesheet('enemy1', 'assets2/guardia.png', 32, 34);

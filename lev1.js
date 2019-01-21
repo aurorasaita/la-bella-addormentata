@@ -377,7 +377,7 @@ var Game1State = {
 
         game.load.image('dialogo1', 'assets1/dialogo1.png');
         game.load.image('dialogo2', 'assets1/dialogo2.png');
-        game.load.image('dialogoGuardia', 'assets1/dialogoGuardia.png');
+        game.load.image('dialogoGuardia', 'assets1/dialogoguardia.png');
 
     },
 

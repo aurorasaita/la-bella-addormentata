@@ -1264,7 +1264,7 @@ var BadState = {
         game.load.crossOrigin = 'anonymous';
         game.load.image('open', 'assets1/hai perso.png');
         game.load.image('riprova', 'assets1/riprova.png');
-        game.load.spritesheet('bottHome', 'assets1/tornaacasa.png');
+        game.load.spritesheet('bottHome', 'assets1/tornaacasa.PNG');
         game.load.spritesheet('aurorachepiange', 'assets1/aurora che piange.png', 406, 339);
     },
 

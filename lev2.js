@@ -2317,7 +2317,7 @@ var GoodState = {
 
     preload: function() {
         game.load.crossOrigin = 'anonymous';
-        game.load.image('open', '/Finale.png');
+        game.load.image('open', 'assets/Finale.png');
         game.load.image('finale', 'assets2/dialogoFinale.png');
     },
 
@@ -2387,7 +2387,7 @@ var BadFinaleState = {
 
     preload: function() {
         game.load.crossOrigin = 'anonymous';
-        game.load.image('open', '/finaleNegativo.png');
+        game.load.image('open', 'assets/finaleNegativo.png');
         game.load.image('riprova', 'assets2/riprova.png');
         game.load.image('principeFinale', 'assets2/principeFinale.png');
 

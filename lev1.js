@@ -28,10 +28,10 @@ var StartState = {
 
     preload: function() {
         game.load.crossOrigin = 'anonymous';
-        game.load.image('open', '/copertina.png');
-        game.load.spritesheet('bottInizia', '/bottInizia.png', 263, 77);
-        game.load.spritesheet('bottCrediti', '/bottCrediti.png', 263, 76);
-        game.load.spritesheet('bottAutori', '/bottAutori.png', 263, 76);
+        game.load.image('open', 'assets/copertina.png');
+        game.load.spritesheet('bottInizia', 'assets/bottInizia.png', 263, 77);
+        game.load.spritesheet('bottCrediti', 'assets/bottCrediti.png', 263, 76);
+        game.load.spritesheet('bottAutori', 'assets/bottAutori.png', 263, 76);
     },
 
     create: function() {
@@ -71,10 +71,10 @@ var CreditiState = {
 
     preload: function() {
         game.load.crossOrigin = 'anonymous';
-        game.load.image('open', '/crediti.png');
-        game.load.spritesheet('bottHome', '/bottHome.png', 263, 76);
-        game.load.spritesheet('bottCrediti', '/bottCrediti.png', 263, 76);
-        game.load.spritesheet('bottAutori', '/bottAutori.png', 263, 76);
+        game.load.image('open', 'assets/crediti.png');
+        game.load.spritesheet('bottHome', 'assets/bottHome.png', 263, 76);
+        game.load.spritesheet('bottCrediti', 'assets/bottCrediti.png', 263, 76);
+        game.load.spritesheet('bottAutori', 'assets/bottAutori.png', 263, 76);
     },
 
     create: function() {
@@ -108,10 +108,10 @@ var AutoriState = {
 
     preload: function() {
         game.load.crossOrigin = 'anonymous';
-        game.load.image('open', '/autori.png');
-        game.load.spritesheet('bottHome', '/bottHome.png', 263, 76);
-        game.load.spritesheet('bottCrediti', '/bottCrediti.png', 263, 76);
-        game.load.spritesheet('bottAutori', '/bottAutori.png', 263, 76);
+        game.load.image('open', 'assets/autori.png');
+        game.load.spritesheet('bottHome', 'assets/bottHome.png', 263, 76);
+        game.load.spritesheet('bottCrediti', 'assets/bottCrediti.png', 263, 76);
+        game.load.spritesheet('bottAutori', 'assets/bottAutori.png', 263, 76);
     },
 
     create: function() {
@@ -148,8 +148,8 @@ game.state.add('Autori', AutoriState);
 var Storia1State = {
     preload: function() {
         game.load.crossOrigin = 'anonymous';
-        game.load.image('open', '/storia1.png');
-        game.load.image('dida1', '/dida1.png');
+        game.load.image('open', 'assets/storia1.png');
+        game.load.image('dida1', 'assets/dida1.png');
     },
 
     create: function() {
@@ -179,8 +179,8 @@ var Storia1State = {
     var Storia2State = {
         preload: function() {
             game.load.crossOrigin = 'anonymous';
-            game.load.image('open', '/storia2.png');
-            game.load.image('dida2', '/dida2.png');
+            game.load.image('open', 'assets/storia2.png');
+            game.load.image('dida2', 'assets/dida2.png');
         },
 
         create: function() {
@@ -210,8 +210,8 @@ var Storia1State = {
         var Storia3State = {
             preload: function() {
                 game.load.crossOrigin = 'anonymous';
-                game.load.image('open', '/storia3.png');
-                game.load.image('dida3', '/dida3.png');
+                game.load.image('open', 'assets/storia3.png');
+                game.load.image('dida3', 'assets/dida3.png');
             },
 
             create: function() {
@@ -241,8 +241,8 @@ var Storia1State = {
             var Storia4State = {
                 preload: function() {
                     game.load.crossOrigin = 'anonymous';
-                    game.load.image('open', '/storia4.png');
-                    game.load.image('dida4', '/dida4.png');
+                    game.load.image('open', 'assets/storia4.png');
+                    game.load.image('dida4', 'assets/dida4.png');
                 },
 
                 create: function() {
@@ -272,8 +272,8 @@ var Storia1State = {
                 var Storia5State = {
                     preload: function() {
                         game.load.crossOrigin = 'anonymous';
-                        game.load.image('open', '/storia5.png');
-                        game.load.image('dida5', '/dida5.png');
+                        game.load.image('open', 'assets/storia5.png');
+                        game.load.image('dida5', 'assets/dida5.png');
                     },
 
                     create: function() {
@@ -303,8 +303,8 @@ var Storia1State = {
                     var Storia6State = {
                         preload: function() {
                             game.load.crossOrigin = 'anonymous';
-                            game.load.image('open', '/storia6.png');
-                            game.load.image('dida6', '/dida6.png');
+                            game.load.image('open', 'assets/storia6.png');
+                            game.load.image('dida6', 'assets/dida6.png');
                         },
 
                         create: function() {
@@ -1198,7 +1198,7 @@ game.state.add('Game1', Game1State);
 var GoodState = {
     preload: function() {
         game.load.crossOrigin = 'anonymous';
-        game.load.image('open', '/malefica.png');
+        game.load.image('open', 'assets/malefica.png');
         game.load.image('malefica1', 'assets1/malefica1.png');
         game.load.image('malefica2', 'assets1/malefica2.png');
         game.load.image('malefica3', 'assets1/malefica3.png');

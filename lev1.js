@@ -28,10 +28,10 @@ var StartState = {
 
     preload: function() {
         game.load.crossOrigin = 'anonymous';
-        game.load.image('open', 'copertina.png');
-        game.load.spritesheet('bottInizia', 'bottInizia.png', 263, 77);
-        game.load.spritesheet('bottCrediti', 'bottCrediti.png', 263, 76);
-        game.load.spritesheet('bottAutori', 'bottAutori.png', 263, 76);
+        game.load.image('open', 'assets/copertina.png');
+        game.load.spritesheet('bottInizia', 'assets/bottInizia.png', 263, 77);
+        game.load.spritesheet('bottCrediti', 'assets/bottCrediti.png', 263, 76);
+        game.load.spritesheet('bottAutori', 'assets/bottAutori.png', 263, 76);
     },
 
     create: function() {
